@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+{
+    "scripts": {
+      "build:css": "tailwindcss -i ./input.css -o ./output.css --minify"
+    }
+}
