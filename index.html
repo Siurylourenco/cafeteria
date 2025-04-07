@@ -19,15 +19,23 @@
   <!-- HEADER COM ÍCONE + NAVBAR -->
   <header>
 
-    <button id="menu-toggle" class="md:hidden fixed top-6 right-5 z-50 text-[#E7D7C1]">
-      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
+
+    <div class="absolute md:hidden w-full flex justify-between items-center px-4 py-2 z-40">
+      <!-- Logo -->
+      <img src="src/img/logo.png" alt="Logo" class="w-20">
+
+      <button id="menu-toggle" class="md:hidden fixed top-6 right-5 z-50 text-[#E7D7C1]">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+
 
     <!-- MENU MOBILE -->
     <nav id="mobilemenu"
-      class="hidden md:hidden fixed top-0 left-0 w-full bg-[#281407] text-[#f1a636] flex flex-col items-center space-y-4 text-xl z-40 p-4 shadow-md">
+      class="hidden md:hidden fixed top-0 left-0 w-full bg-[#281407] text-[#f1a636] flex flex-col items-center space-y-4 text-xl z-40 p-4 mt-[72px] shadow-md">
       <a href="#inicio" class="hover:text-[#E7D7C1] transition">Início</a>
       <a href="#menu" class="hover:text-[#E7D7C1] transition">Menu</a>
       <a href="#sobre" class="hover:text-[#E7D7C1] transition">Sobre</a>
@@ -45,7 +53,7 @@
       </div>
     </nav>
 
-    <a href="https://wa.me/5591999998888"
+    <a href="https://wa.me/5500000000000"
       class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-transform transform hover:scale-110 z-50"
       target="_blank" aria-label="Fale conosco no WhatsApp">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
@@ -166,7 +174,7 @@
               <div
                 class="absolute inset-0 bg-[#6D4C41] text-white p-6 rounded-lg text-center shadow-md flex flex-col justify-center items-center"
                 style="backface-visibility: hidden; transform: rotateY(180deg);">
-                <p class="text-3xl font-bold">R$ 14,90</p>
+                <p class="text-3xl font-bold">R$ 15,90</p>
               </div>
             </div>
           </div>
@@ -187,7 +195,7 @@
               <div
                 class="absolute inset-0 bg-[#6D4C41] text-white p-6 rounded-lg text-center shadow-md flex flex-col justify-center items-center"
                 style="backface-visibility: hidden; transform: rotateY(180deg);">
-                <p class="text-3xl font-bold">R$ 14,90</p>
+                <p class="text-3xl font-bold">R$ 15,00</p>
               </div>
             </div>
           </div>
@@ -208,7 +216,7 @@
               <div
                 class="absolute inset-0 bg-[#6D4C41] text-white p-6 rounded-lg text-center shadow-md flex flex-col justify-center items-center"
                 style="backface-visibility: hidden; transform: rotateY(180deg);">
-                <p class="text-3xl font-bold">R$ 14,90</p>
+                <p class="text-3xl font-bold">R$ 16,90</p>
               </div>
             </div>
           </div>
@@ -251,7 +259,7 @@
     </section>
 
 
-
+   <section id="endereco">
     <div class="flex flex-col justify-center items-center min-h-screen bg-[#281407] px-4 py-10" data-aos="fade-up">
 
       <!-- TÍTULO ACIMA -->
@@ -292,25 +300,28 @@
       </div>
     </div>
     </div>
+  </section>
+
+
     <footer class="bg-[#3e2f23] text-[#E7D7C1] py-6 px-4 mt-10">
-      <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
-    
+      <div
+        class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
         <!-- Horário -->
         <div>
-          <h4 class="font-sans mb-1">Horário de Funcionamento</h4>
-          <ul class="space-y-1 text-[#d8c8b5]">
+          <h4 class="font-bold text-1xl mb-2">Horário de Funcionamento</h4>
+          <ul class="space-y-1">
             <li>Seg a Sex: 08h – 19h</li>
             <li>Sábado: 08h – 14h</li>
             <li>Domingo: Fechado</li>
           </ul>
         </div>
-    
+
         <!-- Logo centralizada -->
         <div class="flex flex-col items-center">
           <img src="src/img/logo.png" alt="Logo" class="w-20 mb-2">
           <div class="text-xs text-[#d8c8b5]">© 2025 Cafena. Todos os direitos reservados.</div>
         </div>
-    
+
         <!-- Redes sociais -->
         <div class="flex gap-4">
           <a href="https://instagram.com" target="_blank">
@@ -320,10 +331,10 @@
             <img src="./src/img/icons8-facebook-50.png" alt="iconefacebook" class="w-5 h-5 hover:opacity-80">
           </a>
         </div>
-    
+
       </div>
     </footer>
-    
+
   </main>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
